@@ -38,7 +38,7 @@ npm run dev
 
 ​		主要涉及到 `RouterView`与v-slot 插槽结合，实现动态导入对话组件。主要逻辑是：使用创建时间作为每个对话的uuid，在切换对话时改变store中处于选中状态的uuid，然后router.replace()响应式替换路由，在显示对话的组件中，根据选中的uuid获取对话并展示。
 
-* Pina处理数据
+* Pinia处理数据
 
    	将处理的数据拆分的4个模块（app，chat， setting，user）,在使用上感觉比vuex简便，简要了解了两者的差别和推荐的使用场景。
 
